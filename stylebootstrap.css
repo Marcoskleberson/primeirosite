@@ -1,0 +1,11 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.textowinfit {
+  text-align: center;
+}
+.map {
+  width: 30px;
+  height: 30px;
+}

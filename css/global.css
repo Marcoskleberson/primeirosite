@@ -1,0 +1,64 @@
+/* .btn1 {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.btn2 {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.btn3 {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.btn4 {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.marcos {
+  flex-wrap: wrap; */
+/* max-width: 100px; */
+/* display: flex;
+  justify-content: center;
+} */
+
+/* menu {
+  display: flex;
+} */
+/* .menu {
+  display: flex;
+  background-color: blue;
+  justify-content: center;
+}
+.btn {
+  padding: 15px;
+  background-color: green;
+} */
+
+/* @media (min-width: 30em) {
+  body {
+    background-color: green;
+  }
+}
+@media (max-width: 40em) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+.linha {
+  line-height: 3.8rem;
+  /* width: 50px;
+  height: 50px; */
+  background-color: blue;
+}
+
+/* FUNCIONOU */
+/* @media (min-width: 30em) {
+  body {
+    background-color: pink;
+  }
+} */

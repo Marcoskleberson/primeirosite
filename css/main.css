@@ -1,0 +1,544 @@
+/* @import "main.css";
+@import "global.css"  */
+:root {
+  --cor-fundo: black;
+  --cor-hover: #595959;
+  --cor-primaria: white;
+}
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: var(--cor-primaria);
+  max-width: 0 auto;
+}
+.btn-whatsapp {
+  position: fixed;
+  outline: none;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+  background: #34af23;
+  color: #ffff;
+  font-size: 2.3rem;
+  border: 1px solid #f1f1f1;
+  animation-name: pulsar;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+.btn-whatsapp a {
+  color: white;
+  text-decoration: none;
+}
+@keyframes pulsar {
+  0% {
+    height: 65px;
+    width: 65px;
+  }
+  100% {
+    height: 80px;
+    width: 80px;
+  }
+}
+#botao {
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.dp-menu ul {
+  max-width: 0 auto;
+  list-style: none;
+  padding: 0;
+  background-color: rgb(37, 37, 39);
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a {
+  color: var(--cor-primaria);
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+
+.dp-menu ul li a:hover {
+  background-color: var(--cor-hover);
+}
+
+#ultimo {
+  float: right;
+  background-color: black;
+}
+
+/* sub-menu */
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+.dp-menu ul li:hover ul {
+  display: block;
+}
+.dp-menu ul ul {
+  width: 150px;
+}
+.dp-menu ul ul li a {
+  display: block;
+}
+body {
+  background: no-repeat center/cover url("../img/bg-masthead.jpg");
+  height: calc(100vh - 150px);
+}
+.header-content {
+  max-width: 400px;
+  margin: 150px auto;
+  width: 100%;
+  font-weight: bold;
+}
+h1 {
+  color: white;
+  font-size: 55px;
+}
+
+p {
+  font-size: 20px;
+  white-space: nowrap;
+  text-align: center;
+}
+#linha-vertical {
+  width: 180px;
+  height: 4px;
+  background-color: #ffda6d;
+}
+
+#botao {
+  color: white;
+  background: #ffc107;
+  border-radius: 30px;
+  border: 2px;
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  display: flex;
+  margin-top: -15%;
+  position: relative;
+  left: 120px;
+  bottom: -75px;
+}
+#espaçobranco {
+  width: 0 auto;
+  height: 30px;
+  background-color: white;
+}
+#espaçoamarelo1 {
+  width: 0 auto;
+  height: 500px;
+  background-color: #ffc107;
+  padding-bottom: 570px;
+}
+#textoamarelo1 {
+  font-size: 35px;
+  padding-top: 90px;
+  text-align: center;
+}
+#linha-vertical2 {
+  width: 180px;
+  height: 4px;
+  background-color: white;
+}
+#textoamarelo2 {
+  font-size: 20px;
+  text-align: center;
+  font-family: solid;
+}
+#botao2 {
+  color: black;
+  background: white;
+  border-radius: 30px;
+  border: 2px;
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  display: flex;
+  margin-top: 2%;
+  position: relative;
+  left: 600px;
+  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#espaçobranco2 {
+  width: 100%;
+  height: auto;
+  /* background-color: #e2e2e2; */
+  background-color: black;
+  color: black;
+  padding-bottom: 15px;
+}
+#linha-vertical3 {
+  width: 180px;
+  height: 4px;
+  background-color: #ffc107;
+}
+.geral {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  white-space: normal;
+}
+
+@media (min-device-width: 600px) and (max-device-width: 1000px) {
+  .text3 {
+    width: 25%;
+  }
+
+  .text2 {
+    width: 15%;
+  }
+
+  .text1 {
+    width: 15%;
+  }
+
+  .texto4 {
+    width: 25%;
+  }
+}
+
+.slider {
+  display: block;
+  height: 500px;
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+.slider input {
+  display: none;
+}
+.slider label {
+  background-color: black;
+  bottom: 12px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+.slider li:nth-child(4) label {
+  left: 100px;
+}
+.slider li:nth-child(5) label {
+  left: 130px;
+}
+.slider li:nth-child(6) label {
+  left: 163px;
+}
+.slider li:nth-child(7) label {
+  left: 195px;
+}
+.slider li:nth-child(8) label {
+  left: 224px;
+}
+.slider li:nth-child(9) label {
+  left: 260px;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+#title4 {
+  color: black;
+  font-size: 34px;
+  font-weight: bold;
+}
+#linha {
+  color: red;
+}
+.softwares {
+  background-color: #212529;
+  width: 100%;
+  padding: 30px;
+}
+
+.softwares p {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+#title5 p {
+  color: white;
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  padding: 55px;
+}
+.btn1 {
+  border-radius: 40%;
+  background: white;
+  height: 54px;
+  font-size: 24px;
+  margin-right: 10px;
+  display: block;
+}
+.btn1 a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+}
+.btn2 {
+  border-radius: 40%;
+  background: white;
+  height: 54px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.btn2 a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn3 {
+  border-radius: 40%;
+  background: white;
+  height: 54px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.btn3 a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn4 {
+  border-radius: 40%;
+  background: white;
+  font-size: 16px;
+  height: 54px;
+  margin: 0;
+}
+.btn4 a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+#lhorizontalcinza {
+  width: 180px;
+  height: 4px;
+  background-color: #ffc107;
+  align-items: center;
+}
+
+.abawinfi {
+  width: 100%;
+}
+.titulowinfit {
+  text-align: center;
+}
+#map {
+  width: 350px;
+  height: 350px;
+}
+.iconwinfit {
+  display: flex;
+}
+
+*/ .botoes ul {
+  list-style: none;
+}
+.btns li a {
+  text-decoration: none;
+  font-size: 8px;
+}
+.btns {
+  display: flex;
+}
+.btns li button {
+  padding: 15px;
+  background: white;
+  margin: 5px;
+}
+.butao {
+  color: black;
+}
+
+.botoes summary p {
+  font-size: 17px;
+}
+.h2winfit {
+  text-align: center;
+}
+
+.paiwinfit {
+  display: flex;
+  justify-content: space-around;
+}
+.primeiraparte {
+  display: flex;
+  flex-direction: row-reverse;
+
+  right: 180px;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.textoex {
+  position: relative;
+  right: 200px;
+  font-weight: bold;
+  width: 50%;
+  font-size: 20px;
+}
+.testemap {
+  width: 50%;
+  float: right;
+}
+.tituloptica {
+  text-align: center;
+}
+
+#textoexoptica {
+  font-size: 20px;
+}
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+}
+#ultimotitulo {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+#ultimotexto h6 {
+  text-align: center;
+  color: #6c757d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+.formulario fieldset label {
+  color: black;
+}
+
+.msg {
+  border-radius: 5px;
+}
+.formulario {
+  text-align: center;
+}
+#nome {
+  padding: 15px;
+  width: 600px;
+  color: black;
+}
+#email {
+  padding: 15px;
+  width: 600px;
+  color: black;
+}
+#telefone {
+  padding: 15px;
+  width: 600px;
+  color: black;
+}
+#interesse {
+  padding: 15px;
+  width: 600px;
+  color: black;
+}
+.msg {
+  padding: 15px;
+  width: 600px;
+  color: black;
+}
+#botaoform {
+  width: 600px;
+  height: 60px;
+  background-color: #f2c010;
+  border-radius: 30px;
+  border: #f2c010;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.#botaoform:hover {
+  background: yellowgreen;
+}
+.textofinal h4 {
+  color: black;
+}
+.textofinal {
+  display: flex;
+  justify-content: center;
+}
+.textofinal li {
+  color: black;
+}
+.textofinal li i {
+  color: black;
+}
+#suporte {
+  font-size: 25px;
+}
+#redes-socias {
+  font-size: 25px;
+}
+footer p {
+  color: black;
+}
+.alinhar {
+  display: flex;
+  justify-content: center;
+}
